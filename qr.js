@@ -20,7 +20,7 @@ function removeFile(FilePath) {
 router.get('/', async (req, res) => {
     const id = makeid();
  //   let num = req.query.number;
-    async function LIZAMWOL_PAIR_CODE() {
+    async function ZERO_PAIR_CODE() {
         const {
             state,
             saveCreds
@@ -70,11 +70,11 @@ var randomItem = selectRandomItem(items);
                         const { upload } = require('./mega');
                         const mega_url = await upload(fs.createReadStream(rf), `${sock.user.id}.json`);
                         const string_session = mega_url.replace('https://mega.nz/file/', '');
-                        let md = "liza~" + string_session;
+                        let md = "zero~" + string_session;
                         let code = await sock.sendMessage(sock.user.id, { text: md });
-                        let desc = `*Hey there, LIZAMWOL User!* 👋🏻
+                        let desc = `*Hey there, ZERO User!* 👋🏻
 
-Thanks for using *LIZAMWOL* — your session has been successfully created!
+Thanks for using *ZERO* — your session has been successfully created!
 
 🔐 *Session ID:* Sent above  
 ⚠️ *Keep it safe!* Do NOT share this ID with anyone.
@@ -87,7 +87,7 @@ https://whatsapp.com/channel/0029VbAtIuR8vd1H5FSip426
 
 *💻 Source Code:*  
 Fork & explore the project on GitHub:  
-https://github.com/mudiyanmas/LIZAMWOL-MD
+https://github.com/nokkanda/unni
 
 ——————
 
@@ -97,7 +97,7 @@ Stay cool and hack smart. ✌🏻`;
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "LIZAMWOL 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉",
+title: "ZERO 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉",
 thumbnailUrl: "https://files.catbox.moe/zu92j8.jpg",
 sourceUrl: "https://whatsapp.com/channel/0029VbAtIuR8vd1H5FSip426",
 mediaType: 1,
@@ -108,9 +108,9 @@ renderLargerThumbnail: true
 {quoted:code })
                     } catch (e) {
                             let ddd = sock.sendMessage(sock.user.id, { text: e });
-                            let desc = `*Hey there, LIZAMWOL User!* 👋🏻
+                            let desc = `*Hey there, ZERO User!* 👋🏻
 
-Thanks for using *LIZAMWOL* — your session has been successfully created!
+Thanks for using *ZERO* — your session has been successfully created!
 
 🔐 *Session ID:* Sent above  
 ⚠️ *Keep it safe!* Do NOT share this ID with anyone.
@@ -123,7 +123,7 @@ https://whatsapp.com/channel/0029VbAtIuR8vd1H5FSip426
 
 *💻 Source Code:*  
 Fork & explore the project on GitHub:  
-https://github.com/mudiyanmas/LIZAMWOL-MD
+https://github.com/nokkanda/unni
 
 > *© Powered by Team Liza*
 Stay cool and hack smart. ✌🏻*`;
@@ -131,7 +131,7 @@ Stay cool and hack smart. ✌🏻*`;
 text: desc,
 contextInfo: {
 externalAdReply: {
-title: "LIZAMWOL 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉 ✅  ",
+title: "ZERO 𝕮𝖔𝖓𝖓𝖊𝖈𝖙𝖊𝖉 ✅  ",
 thumbnailUrl: "https://files.catbox.moe/zu92j8.jpg",
 sourceUrl: "https://whatsapp.com/channel/0029VbAtIuR8vd1H5FSip426",
 mediaType: 2,
@@ -150,7 +150,7 @@ showAdAttribution: true
                     process.exit();
                 } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10);
-                    LIZAMWOL_PAIR_CODE();
+                    ZERO_PAIR_CODE();
                 }
             });
         } catch (err) {
@@ -161,7 +161,7 @@ showAdAttribution: true
             }
         }
     }
-    await LIZAMWOL_PAIR_CODE();
+    await ZERO_PAIR_CODE();
 });
 setInterval(() => {
     console.log("☘️ 𝗥𝗲𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗽𝗿𝗼𝗰𝗲𝘀𝘀...");
